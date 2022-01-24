@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Suu</title>
+
+	<!-------bootstrap link-------->
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+	<!-------css link---------->
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+
+	<!------fontawesome--------->
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+
+	<!------jquey------------>
+	<!--<link rel="stylesheet" type="text/css" href="jquery.min.js">-->
+
+	<!------bootstrap js--------->
+	<script src="/bootstrap/js/bootstrap.min.js"></script>
+	  
+</head>
+<body>
+
+<!-----------Home Section------------>
+	<section id="home">
+		<div class="container">
+		    <div class="row">
+			     <div class="col-xl-6 col-lg-5 col-md-4 col-sm-3 col-4">
+			     	<h1 class="logo">Suu</h1>
+			     </div>	
+			     <div class="col-xl-6 col-lg-7 col-md-8 col-sm-9 col-8">
+			     	<nav class="navbar navbar-expand-sm navbar-light">
+						<button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-lable="Toggle neviagtion">
+							<span class="navbar-toggler-icon float-end"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportContent">
+							<div class="active">
+					        <ul>
+							    <a href="#home"><li>Home</li></a>
+							    <a href="#portfolio"><li>Portfolio</li></a>
+							    <a href="#project"><li>Project</li></a>
+							    <a href="#service"><li>Service</li></a>
+							    <a href="#contact"><li>Contact</li></a>
+					        </ul>
+					        </div>		
+				    	</div>
+				    </nav>    
+		         </div>
+		     </div>
+		     <form class="myform">
+		     <div class="row">	
+		         <div class="col-xl-7 col-lg-7 col-md-8 col-sm-9 col-9 intro">
+		         	
+		         	<h2>I'm<br></h2>
+		         	<h1>Su Nandar Moe<br><span class="animatename"></span></h1>
+		         	
+		         	<a href="#contact"><button type="button" class="btnhire">Hire Me</button></a>
+		         </div>
+		         <div class="col-xl-5 col-lg-5 col-md-4 col-sm-3 col-3 myimg">
+		         	<img src="../img/myimage.jpg">
+		         </div>
+		    </div>
+		</form>
+		</div>
+	</section>
+    <script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".navbar-toggler").click(function(){
+				$("div").toggleClass(".active")
+			})
+		})
+	</script>
+
+<!------------Portfolio Section----------->
+
+	<section id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-lg-3 col-md-4 col-sm-4 col-6 about">
+					<h1>About Me</h1>
+					<img src="../img/portfolioimage.jpg">
+				</div>
+				
+				<div class="col-xl-4 col-lg-4.5 col-md-4 col-sm-4 col-6 hello">
+					<h3>Hello !</h3>
+					<p>I’m a front-end developer based in Myanmar. My major strengths 
+						are Web-Developer, UI/UX Designer. I specialize hepling Web-Site Design.</p>
+					<button type="button" class="btncv">Download CV</button>
+				</div>
+				
+				
+				<div class="col-xl-4 col-lg-4.5 col-md-4 col-sm-4 col-0 skill">
+					<h3>Professional Skills</h3>
+                    
+                    <div class="bar" name="bar-one">
+                    	<p>HTML<abbr>85%</abbr></p>
+                    	<div class="animatebar"><span></span></div>
+                    </div>
+
+                    <div class="bar">
+                    	<p>CSS<abbr>80%</abbr></p>
+                    	<div class="animatebar"><span></span></div>
+                    </div>
+
+                    <div class="bar">
+                    	<p>Bootstrap<abbr>60%</abbr></p>
+                    	<div class="animatebar"><span></span></div>
+                    </div>
+
+                    <div class="bar">
+                    	<p>JavaScript, JQuery<abbr>55%</abbr></p>
+                    	<div class="animatebar"><span></span></div>
+                    </div>
+                   
+
+                    <div class="bar">
+                    	<p>UI/UX Design<abbr>90%</abbr></p>
+                    	<div class="animatebar"><span></span></div>
+                    </div>
+                    
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+<!-----------Project Section--------->
+
+	<section id="project">
+		<h1 class="projectname">Some of My Projects</h1>
+			<div class="container">
+			    <div class="row">
+				    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="project-card" id="project-one">
+            				<img src="../img/service-one.png" class="project-img" alt="">
+            				<div class="project-content">
+                				<h1 id="crochet" class="project-title">Crochet</h1>
+                				<p class="project-info">Responsive Crochet Ordering Website using HTML, CSS and Bootstrap.</p>
+                			<div class="project-btn-grp">
+                    			<button class="project-btn github">github repo</button>
+                    			<a href="file:///C:/SuuNandarMoe_Crochet/html/home.html"><button class="project-btn live">see live</button></a>
+                			</div>
+            				</div>
+        				</div>
+        			</div>
+        			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+        				<div class="project-card" id="project-two">
+            				<img src="../img/service-three.png" class="project-img" alt="">
+            				<div class="project-content">
+                				<h1 id="fashion" class="project-title">Coly Fashion Warehouse</h1>
+                				<p class="project-info">Responsive Website of Latest Fashion Styles using Pure HTML,CSS and Bootstrap</p>
+                			<div class="project-btn-grp">
+                    			<button class="project-btn github">github repo</button>
+                    			<a href="file:///C:/Fashion/html/home.html"><button class="project-btn live">see live</button></a>
+                			</div>
+            				</div>
+        				</div>
+        		    
+        		    </div>
+        		</div>
+        		<div class="row">
+        			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+        				<div class="project-card" id="project-three">
+            				<img src="../img/service-four.png" class="project-img" alt="">
+            				<div class="project-content">
+                				<h1 id="delivery" class="project-title">Delivery Service</h1>
+                				<p class="project-info">Responsive Ordering Website of trusted Courier Service using HTML,CSS,Bootstrap,Jquery and UI/UX design using Figma Tool. </p>
+                			<div class="project-btn-grp">
+                    			<button class="project-btn github">github repo</button>
+                    			<a href="file:///C:/bootstrapproject/index.html"><button class="project-btn live">see live</button></a>
+                			</div>
+            				</div>
+        				</div>
+        			</div>
+        		    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+        				<div class="project-card"id="project-four">
+            				<img src="../img/service-two.png" class="project-img" alt="">
+            				<div class="project-content">
+                				<h1 id="coffee" class="project-title">Yangon Coffee Shops</h1>
+                				<p class="project-info">Responsive Website of exploring coffee shops related townships using HTML,CSS, Bootstrap and Jquery </p>
+                			<div class="project-btn-grp">
+                    			<button class="project-btn github">github repo</button>
+                    			<a href="file:///C:/YangonCafe/html/home.html"><button class="project-btn live">see live</button></a>
+                			</div>
+            				</div>
+        				</div>
+        			</div>
+				</div>
+				<button class="btnmore">More Responsive Websites & Designs</button>
+		</div>
+	</section>
+
+<!--------Experience---------->
+
+<section id="service">
+		<h1 class="service-exp">Experience of Website</h1> 
+	<div class="timeline"> 
+	
+		<div class="container">
+		<div class="row">
+			<div class="col-xl-6 col-lg-5 col-md-4 col-sm-6 col-12">
+				<form class="serviceform">
+					<div class="education">
+						<h6 class="edu">Education</h6>
+			       		<ul class="exp">
+			       			<li>I graduated from University of Computer Studies in Yangon.</li>
+			       			<li>I'm waiting to complete Master Degree of Computer Science.</li>
+			       		</ul>
+		       		</div>
+		       		<div class="job-position">
+			       		<h6 class="cur-job">Current Job</h6>
+			       		<ul class="job">
+			       			<li>I'm currently writing websites as a freelancer while I'm teaching as a computer science and programming teacher for younger students at International School.</li>
+			       		</ul>
+		       		</div>
+		       </form>
+			
+		</div>
+	
+	
+		<div class="col-xl-6 col-lg-7 col-md-8 col-sm-6 col-0 card-main">
+			
+	              <div class="card">
+	                 <div class="card-body">
+	                     <h1 class="card-title">30+</h1>
+	       		<p class="card-detail">Pure Front-End HTML and CSS Websites</p>
+	        	</div>
+	    </div>
+	    <div class="card">
+	       	<div class="card-body">
+	       		<h1 class="card-title">50+</h1>
+	       		<p class="card-detail">UI/UX Designs Using Figma Tool</p>
+	       	</div>
+	    </div>
+	    <div class="card">
+	       	<div class="card-body">
+	       		<h1 class="card-title">20+</h1>
+	       		<p class="card-detail">Responisive Websites Using Bootstrap</p>
+	       	</div>
+	    </div>
+	    <div class="card">
+	       	<div class="card-body">
+	       	    <h1 class="card-title">10+</h1>
+	       		<p class="card-detail">Responsive Back-End Websites Using JQuery and JavaScript</p>
+	       	</div>
+	    </div>
+	    <div class="card">
+	       	<div class="card-body">
+	       		<h1 class="card-title">10+</h1>
+	       		<p class="card-detail">Pure Back-End Websites Using JQuery and JavaScript</p>
+	       	</div>
+	    </div>
+	    </div>
+	</div> 	
+</div>
+	</div>
+</section>
+
+<!---------Contact Section----------->
+
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<h1>Contact Me</h1>
+				<div class="col-xl-6 col-lg-5 col-md-6 col-sm-6 col-6 map">
+				    <div class="mapouter">
+					<div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=myanmar yangon&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+				    </div>
+				</div>
+   				<div class="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-6 sendmsg">
+   					<form class="msgform">
+   					<h4>Get in touch</h4>
+					<div class="form-floating mb-3">
+						<input type="name" class="form-control" id="floatingInput" placeholder="Enter your name" required>
+					</div>
+					<div class="form-floating">
+						<input type="email" class="form-control" id="floatingPassword" placeholder="Enter your mail" required>
+					</div>
+					<div class="form-floating">
+						<textarea class="form-control" placeholder="Leave a message here!" id="floatingTextarea" required></textarea>
+					</div>
+					<button class="btnmessage" type="button">Send Message 
+						<i id="msgarrow" class="fas fa-arrow-right"></i>
+					</button>
+					</form>
+					
+				</div>
+				
+			</div>
+		</div>	
+	</section>
+	<section id="important">
+		<div class="container">
+		<div class="row" >
+				<div class="col-xl-4 col-lg-5 col-md-6 col-sm-4 col-5">
+			           <div class="icon">
+			           	<h5>Approach Us</h5>
+					<i id="ig"   class="fab fa-instagram"></i><br>
+					<a href="https://www.facebook.com/suunandar.moe"><i id="fb"   class="fab fa-facebook-square"></i></a>
+					<i id="twit"   class="fab fa-twitter"></i>
+					<i id="tel"  class="fab fa-telegram"></i><br>
+					<i id="mail" class="fas fa-envelope"></i>
+				     </div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 address">
+					<h5>Address</h5>
+					<div class="add">
+					<p>09-975700968<i id="phone" class="fas fa-phone"></i></p>
+					<p>suunandamoe@gmail.com<i id="email" class="fas fa-envelope"></i></p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-3 col-md-2 col-sm-4 col-3 link">
+					<h5>Links</h5>
+					<ul>
+					    <a href="#home">
+					    	<li class="lihome">Home</li>
+					    </a>
+					    <a href="#portfolio">
+					    	<li class="liport">Portfolio</li>
+					    </a>
+					    <a href="#project">
+					    	<li class="lipro">Project</li>
+					    </a>
+					    <a href="#service">
+					    	<li class="liser">Service</li>
+					    </a>
+					    <a href="#contact">
+					    	<li class="licon">Contact</li>
+					    </a>
+					</ul>
+				</div>	
+			    </div>
+	       </div>
+	</section>
+
+</body>
+</html>
