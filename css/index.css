@@ -74,6 +74,8 @@ header .navbar a:hover{
 
 .home{
 	padding: 20rem 15rem;
+	border-bottom: 1rem solid #ffffff;
+	border-radius: 10rem 20rem 20rem;
 	color: #ffffff;
 	text-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1.0);
 }
@@ -132,6 +134,8 @@ header .navbar a:hover{
 
 .portfolio{
 	padding: 10rem 15rem;
+	border-left: 1rem solid #ffffff;
+	border-radius: 10rem 20rem 20rem;
 }
 .portfolio .about-heading,.project .project-heading,.design .design-heading,.contact .contact-heading{
 	font-size: 4rem;
@@ -282,6 +286,8 @@ abbr{
 /*------Project--------*/
 .project{
 	padding: 10rem;
+	border-right: 1rem solid #ffffff;
+	border-radius: 10rem 20rem 20rem;
 }
 .project .box-container{
 	display: flex;
@@ -337,6 +343,8 @@ abbr{
 /*--------Design-------------*/
 .design{
 	padding: 10rem;
+	border-left: 1rem solid #ffffff;
+	border-radius: 10rem 20rem 20rem;
 }
 .design .design-row{
 	display: flex;
@@ -367,6 +375,8 @@ abbr{
 /*----------Contact-------*/
 .contact{
 	padding: 10rem;
+	border-right: 1rem solid #ffffff;
+	border-radius: 10rem 20rem 20rem;
 }
 .contact .row{
 	margin-top: 3rem;
@@ -467,7 +477,7 @@ abbr{
 }
 @media (max-width: 991px){
 	html{
-		font-size: 45%;
+		font-size: 44%;
 	}
 	header{
 		padding: 1rem 8%;
@@ -649,6 +659,9 @@ abbr{
 @media(max-width: 401px){
 	html{
 		font-size: 24%;
+	}
+	header{
+		padding: 2rem;
 	}
 	.home{
 		padding-top: 8rem 20rem;
