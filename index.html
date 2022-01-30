@@ -1,101 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html>  
 <head> 
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<title>Suu</title>
-
+ 
 	<!-------bootstrap link-------->
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 
 	<!-------css link---------->
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 
-	<!------fontawesome--------->
-	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
-
-	<!------jquey------------>
-	<!--<link rel="stylesheet" type="text/css" href="jquery.min.js">-->
-
 	<!------bootstrap js--------->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-------Unicons Plug in ---------->
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 	  
 </head>
 <body>
-
-<!-----------Home Section------------>
-	<section id="home">
-		<div class="container">
-		    <div class="row">
-			     <div class="col-xl-6 col-lg-5 col-md-4 col-sm-3 col-4">
-			     	<h1 class="logo">Suu</h1>
-			     </div>	
-			     <div class="col-xl-6 col-lg-7 col-md-8 col-sm-9 col-8">
-			     	<nav class="navbar navbar-expand-sm navbar-light">
-						<button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-lable="Toggle neviagtion">
-							<span class="navbar-toggler-icon float-end"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarSupportContent">
-							<div class="active">
-					        <ul>
-							    <a href="#home"><li>Home</li></a>
-							    <a href="#portfolio"><li>Portfolio</li></a>
-							    <a href="#project"><li>Project</li></a>
-							    <a href="#service"><li>Service</li></a>
-							    <a href="#contact"><li>Contact</li></a>
-					        </ul>
-					        </div>		
-				    	</div>
-				    </nav>    
-		         </div>
-		     </div>
-		     <form class="myform">
-		     <div class="row">	
-		         <div class="col-xl-7 col-lg-7 col-md-8 col-sm-9 col-9 intro">
-		         	
-		         	<h2>I'm<br></h2>
-		         	<h1>Su Nandar Moe<br><span class="animatename"></span></h1>
-		         	
-		         	<a href="#contact"><button type="button" class="btnhire">Hire Me</button></a>
-		         </div>
-		         <div class="col-xl-5 col-lg-5 col-md-4 col-sm-3 col-3 myimg">
-		         	<img src="../img/myimage.jpg">
-		         </div>
-		    </div>
-		</form>
+	<header>
+		<div class="uil uil-ellipsis-v" id="menu-bar"></div>
+		<div class="logo">
+			<span>S</span>
+			<span>U</span>
+			<span>U</span>
 		</div>
-	</section>
-    <script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$(".navbar-toggler").click(function(){
-				$("div").toggleClass(".active")
-			})
-		})
+		<nav class="navbar">
+			<a href="#home">Home</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#project">Project</a>
+			<a href="#design">Design</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<a href="#footer"><div class="uil uil-user" id="user"></div></a>
+	</header>
+	<script type="text/JavaScript">
+		let menu=document.querySelector("#menu-bar");
+		let nav=document.querySelector(".navbar");
+
+		menu.onclick=()=>{
+			menu.classList.toggle('uil-times');
+			nav.classList.toggle('active');
+		}
+		window.onscroll=()=>{
+			menu.classList.remove("uil-times");
+			nav.classList.remove("active");
+		}
 	</script>
 
+<!-----------Home Section------------>
+	<section class="home" id="home">
+		<div class="row">
+			<div class="intro">
+		<h2>I'm</h2>
+		<h1>Su Nandar Moe</h1>
+		<h2>
+			<span>Web Developer, </span>
+			<span>UI/UX Designer, </span>
+			<span>Freelancer</span>
+		</h2>
+		<button class="btnhire">Hire Me</button>
+		</div>
+		<div class="image">
+		<img src="img/myimage.jpg">
+		</div>
+		</div>
+	</section>
+	
 <!------------Portfolio Section----------->
 
-	<section id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-4 col-lg-3 col-md-4 col-sm-4 col-6 about">
-					<h1>About Me</h1>
-					<img src="../img/portfolioimage.jpg">
+	<section id="portfolio" class="portfolio">
+		<h1 class="about-heading">My <span>Details</span></h1>
+		<div class="row">
+			<div class="education">
+				
+				<h1>Education</h1>
+				<div class="edu-row">
+					<ul><h2>B.C.Sc Computer Science</h2>
+						<li>University of Computer Studies in Yangon</li>
+						<li>December 2012 to February 2018</li>
+					</ul>
+					<ul><h2>Master Qualified</h2>
+						<li>Course Work done from June 2018 to March 2019</li>
+						<li>2019-Up to now doing Thesis Research of Master Degree while working as a programming teacher</li>
+					</ul>
 				</div>
 				
-				<div class="col-xl-4 col-lg-4.5 col-md-4 col-sm-4 col-6 hello">
-					<h3>Hello !</h3>
-					<p>I’m a front-end developer based in Myanmar. My major strengths 
-						are Web-Developer, UI/UX Designer. I specialize hepling Web-Site Design.</p>
-					<button type="button" class="btncv">Download CV</button>
-				</div>
-				
-				
-				<div class="col-xl-4 col-lg-4.5 col-md-4 col-sm-4 col-0 skill">
-					<h3>Professional Skills</h3>
-                    
-                    <div class="bar" name="bar-one">
+				<h1 class="skill-heading">Skills</h1>
+			</div>
+
+			
+			<div class="skill">
+				<p></p>
+				<div class="bar">
                     	<p>HTML<abbr>85%</abbr></p>
                     	<div class="animatebar"><span></span></div>
                     </div>
@@ -122,219 +120,132 @@
                     </div>
                     
 				</div>
-
 			</div>
-		</div>
 	</section>
 
 <!-----------Project Section--------->
 
-	<section id="project">
-		<h1 class="projectname">Some of My Projects</h1>
-			<div class="container">
-			    <div class="row">
-				    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="project-card" id="project-one">
-            				<img src="../img/service-one.png" class="project-img" alt="">
-            				<div class="project-content">
-                				<h1 id="crochet" class="project-title">Crochet</h1>
-                				<p class="project-info">Responsive Crochet Ordering Website using HTML, CSS and Bootstrap.</p>
-                			<div class="project-btn-grp">
-                    			<button class="project-btn github">github repo</button>
-                    			<a href="file:///C:/SuuNandarMoe_Crochet/html/home.html"><button class="project-btn live">see live</button></a>
-                			</div>
-            				</div>
-        				</div>
-        			</div>
-        			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-        				<div class="project-card" id="project-two">
-            				<img src="../img/service-three.png" class="project-img" alt="">
-            				<div class="project-content">
-                				<h1 id="fashion" class="project-title">Coly Fashion Warehouse</h1>
-                				<p class="project-info">Responsive Website of Latest Fashion Styles using Pure HTML,CSS and Bootstrap</p>
-                			<div class="project-btn-grp">
-                    			<button class="project-btn github">github repo</button>
-                    			<a href="file:///C:/Fashion/html/home.html"><button class="project-btn live">see live</button></a>
-                			</div>
-            				</div>
-        				</div>
-        		    
-        		    </div>
-        		</div>
-        		<div class="row">
-        			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-        				<div class="project-card" id="project-three">
-            				<img src="../img/service-four.png" class="project-img" alt="">
-            				<div class="project-content">
-                				<h1 id="delivery" class="project-title">Delivery Service</h1>
-                				<p class="project-info">Responsive Ordering Website of trusted Courier Service using HTML,CSS,Bootstrap,Jquery and UI/UX design using Figma Tool. </p>
-                			<div class="project-btn-grp">
-                    			<button class="project-btn github">github repo</button>
-                    			<a href="file:///C:/bootstrapproject/index.html"><button class="project-btn live">see live</button></a>
-                			</div>
-            				</div>
-        				</div>
-        			</div>
-        		    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-        				<div class="project-card"id="project-four">
-            				<img src="../img/service-two.png" class="project-img" alt="">
-            				<div class="project-content">
-                				<h1 id="coffee" class="project-title">Yangon Coffee Shops</h1>
-                				<p class="project-info">Responsive Website of exploring coffee shops related townships using HTML,CSS, Bootstrap and Jquery </p>
-                			<div class="project-btn-grp">
-                    			<button class="project-btn github">github repo</button>
-                    			<a href="file:///C:/YangonCafe/html/home.html"><button class="project-btn live">see live</button></a>
-                			</div>
-            				</div>
-        				</div>
-        			</div>
+	<section id="project" class="project">
+		<h1 class="project-heading">Designs of <span>Project Creations</span></h1>
+		<div class="box-container">
+			<div class="box">
+				<img class="image" src="img/p1.jpg">
+				<div class="content">
+					<h3>Dress Tayloring Website</h3>
+					<a href="#" class="btnhire">See Live</a>
+					<a href="#" class="btnhire">Github Repository</a>
 				</div>
-				<button class="btnmore">More Responsive Websites & Designs</button>
-		</div>
+			</div>
+
+			<div class="box">
+				<img class="image" src="img/p2.jpg">
+				<div class="content">
+					<h3>Restaurant Website</h3>
+					<a href="#" class="btnhire">See Live</a>
+					<a href="#" class="btnhire">Github Repository</a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img class="image" src="img/p3.jpg">
+				<div class="content">
+					<h3>Travel Website</h3>
+					<a href="#" class="btnhire">See Live</a>
+					<a href="#" class="btnhire">Github Repository</a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img class="image" src="img/p5.jpg">
+				<div class="content">
+					<h3>Traditional Food Website</h3>
+					<a href="#" class="btnhire">See Live</a>
+					<a href="#" class="btnhire">Github Repository</a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img class="image" src="img/p6.jpg">
+				<div class="content">
+					<h3>Delivery Service Website</h3>
+					<a href="#" class="btnhire">See Live</a>
+					<a href="#" class="btnhire">Github Repository</a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img class="image" src="img/p7.jpg">
+				<div class="content">
+					<h3>Crochet Ordering Website</h3>
+					<a href="#" class="btnhire">See Live</a>
+					<a href="#" class="btnhire">Github Repository</a>
+				</div>
+			</div>
+		</div>	
 	</section>
 
-<!--------Experience---------->
+<!--------Design---------->
 
-<section id="service">
-		<h1 class="service-exp">Experience of Website</h1> 
-	<div class="timeline"> 
-	
-		<div class="container">
-		<div class="row">
-			<div class="col-xl-6 col-lg-5 col-md-4 col-sm-6 col-12">
-				<form class="serviceform">
-					<div class="education">
-						<h6 class="edu">Education</h6>
-			       		<ul class="exp">
-			       			<li>I graduated from University of Computer Studies in Yangon.</li>
-			       			<li>I'm waiting to complete Master Degree of Computer Science.</li>
-			       		</ul>
-		       		</div>
-		       		<div class="job-position">
-			       		<h6 class="cur-job">Current Job</h6>
-			       		<ul class="job">
-			       			<li>I'm currently writing websites as a freelancer while I'm teaching as a computer science and programming teacher for younger students at International School.</li>
-			       		</ul>
-		       		</div>
-		       </form>
-			
+<section id="design" class="design">
+	<h1 class="design-heading">Acquaintance of <span>Website Languages</span></h1>
+		<div class="design-row"> 
+			<div class="exp-row">
+				<ul><h3>Experience</h3>
+					<li>Working as a part-time language teacher at Hope Education Center since 2019-2020.</li>
+					<li>Creating website designs as a freelancer while doing thesis research based on web about AI Field since 2020-2021.</li>
+					</li>
+					<li>Designing the front-end websites with UI/UX tools while teaching as a programming teacher at SDEC International School since 2021-up to till.</li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="img/u1.jpg">
+				<img src="img/u2.jpg">
+				<img src="img/u3.jpg">
+				<img src="img/u4.jpg">
+			</div>
 		</div>
-	
-	
-		<div class="col-xl-6 col-lg-7 col-md-8 col-sm-6 col-0 card-main">
-			
-	              <div class="card">
-	                 <div class="card-body">
-	                     <h1 class="card-title">30+</h1>
-	       		<p class="card-detail">Pure Front-End HTML and CSS Websites</p>
-	        	</div>
-	    </div>
-	    <div class="card">
-	       	<div class="card-body">
-	       		<h1 class="card-title">50+</h1>
-	       		<p class="card-detail">UI/UX Designs Using Figma Tool</p>
-	       	</div>
-	    </div>
-	    <div class="card">
-	       	<div class="card-body">
-	       		<h1 class="card-title">20+</h1>
-	       		<p class="card-detail">Responisive Websites Using Bootstrap</p>
-	       	</div>
-	    </div>
-	    <div class="card">
-	       	<div class="card-body">
-	       	    <h1 class="card-title">10+</h1>
-	       		<p class="card-detail">Responsive Back-End Websites Using JQuery and JavaScript</p>
-	       	</div>
-	    </div>
-	    <div class="card">
-	       	<div class="card-body">
-	       		<h1 class="card-title">10+</h1>
-	       		<p class="card-detail">Pure Back-End Websites Using JQuery and JavaScript</p>
-	       	</div>
-	    </div>
-	    </div>
-	</div> 	
-</div>
-	</div>
 </section>
 
 <!---------Contact Section----------->
 
-	<section id="contact">
-		<div class="container">
+	<section id="contact" class="contact">
+		<h1 class="contact-heading"><span>Get in Touch </span>with me</h1>
 			<div class="row">
-				<h1>Contact Me</h1>
-				<div class="col-xl-6 col-lg-5 col-md-6 col-sm-6 col-6 map">
-				    <div class="mapouter">
-					<div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=myanmar yangon&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
-				    </div>
-				</div>
-   				<div class="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-6 sendmsg">
-   					<form class="msgform">
-   					<h4>Get in touch</h4>
-					<div class="form-floating mb-3">
-						<input type="name" class="form-control" id="floatingInput" placeholder="Enter your name" required>
-					</div>
-					<div class="form-floating">
-						<input type="email" class="form-control" id="floatingPassword" placeholder="Enter your mail" required>
-					</div>
-					<div class="form-floating">
-						<textarea class="form-control" placeholder="Leave a message here!" id="floatingTextarea" required></textarea>
-					</div>
-					<button class="btnmessage" type="button">Send Message 
-						<i id="msgarrow" class="fas fa-arrow-right"></i>
-					</button>
-					</form>
-					
+				<div class="image">
+					<img src="img/contact.jpg">
 				</div>
 				
+					<form>
+						<div class="inputbox">
+						<input type="text" placeholder="Name"><br>
+						<input type="email" placeholder="Email Address"><br>
+						<button type="button" class="btnhire">Contact me</button>
+						</div>
+					</form>
 			</div>
-		</div>	
 	</section>
-	<section id="important">
-		<div class="container">
-		<div class="row" >
-				<div class="col-xl-4 col-lg-5 col-md-6 col-sm-4 col-5">
-			           <div class="icon">
-			           	<h5>Approach Us</h5>
-					<i id="ig"   class="fab fa-instagram"></i><br>
-					<a href="https://www.facebook.com/suunandar.moe"><i id="fb"   class="fab fa-facebook-square"></i></a>
-					<i id="twit"   class="fab fa-twitter"></i>
-					<i id="tel"  class="fab fa-telegram"></i><br>
-					<i id="mail" class="fas fa-envelope"></i>
-				     </div>
-				</div>
-				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 address">
-					<h5>Address</h5>
-					<div class="add">
-					<p>09-975700968<i id="phone" class="fas fa-phone"></i></p>
-					<p>suunandamoe@gmail.com<i id="email" class="fas fa-envelope"></i></p>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-3 col-md-2 col-sm-4 col-3 link">
-					<h5>Links</h5>
-					<ul>
-					    <a href="#home">
-					    	<li class="lihome">Home</li>
-					    </a>
-					    <a href="#portfolio">
-					    	<li class="liport">Portfolio</li>
-					    </a>
-					    <a href="#project">
-					    	<li class="lipro">Project</li>
-					    </a>
-					    <a href="#service">
-					    	<li class="liser">Service</li>
-					    </a>
-					    <a href="#contact">
-					    	<li class="licon">Contact</li>
-					    </a>
-					</ul>
-				</div>	
-			    </div>
-	       </div>
+	<!----------Footer Section-------->
+	<section class="footer" id="footer">
+		<h3>Approach me</h3>
+		<div class="link">
+			<i class="uil uil-facebook"></i>
+			<i class="uil uil-facebook-messenger"></i>
+			<i class="uil uil-github"></i>
+			<i class="uil uil-envelope-minus"></i>
+			<i class="uil uil-phone-volume"></i>
+		</div>
+		<p> I have acquired relevant skills and experience, which I shall bring to your organization. I have also worked tirelessly on my communication abilities and teamwork skills, which I will put to use in my future career, which would be in your organization if I am selected for the position.</p>
+		<div class="menu">
+			<a href="#home"><i class="uil uil-estate"></i></a>
+			<a href="#portfolio"><i class="uil uil-bag-alt"></i></a>
+			<a href="#project"><i class="uil uil-file"></i></a>
+			<a href="#design"><i class="uil uil-brush-alt"></i></a>
+			<a href="#contact"><i class="uil uil-at"></i></a>
+			<p>Created By <span>Su Nandar Moe</span></p>
+		</div>
+
 	</section>
 
+	
 </body>
 </html>
